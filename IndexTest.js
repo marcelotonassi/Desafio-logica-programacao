@@ -5,7 +5,7 @@ let herois = [
     { nome: "Mulher Gato", xp: 5000 }
 ];
 
-// Ordenar o array de heróis com base na experiência (XP)
+// Ordenar o array 
 herois.sort((a, b) => a.xp - b.xp);
 
 // Loop para cada herói
@@ -14,7 +14,7 @@ for (let i = 0; i < herois.length; i++) {
     let xpHeroi = herois[i].xp;
     let nivel;
 
-    // Estrutura de decisão para determinar o nível do herói
+    // Estrutura de decisão 
     if (xpHeroi < 1000) {
         nivel = "Ferro";
     } else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
@@ -33,6 +33,6 @@ for (let i = 0; i < herois.length; i++) {
         nivel = "Radiante";
     }
 
-    // Saída para cada herói
+    // Saída 
     console.log("O Herói de nome " + nomeHeroi + " está no nível " + nivel + " e é a Posição "+ (i + 1) +" na lista" );
 }
